@@ -30,6 +30,7 @@ function initaliseGame() {
     }, 100)
 };
 
+//add money function for the clicker button
 function addMoney() {
     money+=1;
 };
