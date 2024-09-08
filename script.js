@@ -20,6 +20,7 @@ function initaliseGame() {
 
     window.setInterval(function(){
         money += mps;
+        moneyPerSecond.innerHTML = `${mps}/s`;
         currMoney.innerHTML = `${money}`;
     }, 1000);
 };
