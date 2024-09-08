@@ -1,5 +1,3 @@
-import ("./Multipliers.js");
-
 let buttons = document.querySelectorAll(".btn");
 let moneyPerSecond = document.querySelector("#MoneyPerSecond");
 let currMoney = document.querySelector("#currMoney");
