@@ -1,5 +1,6 @@
 body {
     background: beige;
+    font-size: xx-large;
 }
 
 .screen-container {
@@ -16,8 +17,9 @@ body {
 }
 
 .btn {
-    height: 50px;
-    width: 100px;
+    height: 100px;
+    width: 175px;
+    font-size: large;
     cursor: pointer;
     background-color: burlywood;
     -webkit-border-radius: 5px;
