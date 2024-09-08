@@ -14,11 +14,32 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    position: relative;
+    float: inline-start;
 }
 
 .btn {
     height: 100px;
     width: 175px;
+    font-size: large;
+    cursor: pointer;
+    background-color: burlywood;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.manualClickBtn {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.clickBtn {
+    height: 150px;
+    width: 200px;
     font-size: large;
     cursor: pointer;
     background-color: burlywood;
