@@ -1,11 +1,13 @@
 import ("./Multipliers.js");
 
 let buttons = document.querySelectorAll(".btn");
+let buttonUpgrades = document.querySelectorAll(".manualBtn");
 let clickButton = document.querySelector(".clickBtn");
 let moneyPerSecond = document.querySelector("#MoneyPerSecond");
 let currMoney = document.querySelector("#currMoney");
 
 let mps = 0;
+let currMPC = 1
 let money = Number.parseInt(currMoney.innerHTML);
 let running = false;
 initaliseGame();
@@ -15,9 +17,11 @@ function initaliseGame() {
     //add click event listener to each multiplier button
     buttons.forEach(btn => btn.addEventListener("click", updateMPS));
     clickButton.addEventListener("click", addMoney);
+    buttonUpgrades.forEach(btn => btn.addEventListener("click",updateMPC));
 
     moneyPerSecond.innerHTML = `${mps}/s`;
     currMoney.innerHTML = `${money}`;
+    clickButton.innerHTML = `+$ ${currMPC}`;
     running = true;
 
     window.setInterval(function(){
@@ -29,6 +33,12 @@ function initaliseGame() {
         currMoney.innerHTML = `${money}`;
     }, 100)
 };
+
+function updateMPC() {
+    let textMPC = clickButton.innerHTML;
+    let addNum = Number.parseInt(this.innerHTML.match(/(\d+)/)[0]);
+    currMPC += addNum;
+}
 
 //add money function for the clicker button
 function addMoney() {
