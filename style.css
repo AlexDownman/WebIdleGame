@@ -35,6 +35,16 @@ body {
     position:absolute;
     left: 50%;
     top: 25%;
+    height: 100px;
+    width: 175px;
+    font-size: large;
+    cursor: pointer;
+    background-color: burlywood;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .clickBtn {
@@ -56,17 +66,4 @@ body {
     row-gap: 10px;
     position: relative;
     float: inline-start;
-}
-
-.manualClickBtn {
-    height: 100px;
-    width: 175px;
-    font-size: large;
-    cursor: pointer;
-    background-color: burlywood;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
 }
