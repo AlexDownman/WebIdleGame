@@ -31,6 +31,7 @@ function initaliseGame() {
     window.setInterval(function(){
         moneyPerSecond.innerHTML = `${mps}/s`;
         currMoney.innerHTML = `${money}`;
+        clickButton.innerHTML = `+$ ${currMPC}`;
     }, 100)
 };
 
