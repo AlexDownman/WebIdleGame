@@ -32,7 +32,10 @@ function initaliseGame() {
 
 //add money function for the clicker button
 function addMoney() {
-    money+=1;
+    let i = this.innerHTML;
+    let n = i.match(/(\d+)/);
+    let num = Number.parseInt(n[0]);
+    money+=num;
 };
 
 //check whether player can afford the multiplier
