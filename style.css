@@ -34,8 +34,8 @@ body {
 
 .manualClickBtn {
     position:absolute;
-    left: 50% - 200px;
-    top: 25% - 150px;
+    left: 50%;
+    top: 25%;
     height: 100px;
     width: 175px;
     font-size: large;
