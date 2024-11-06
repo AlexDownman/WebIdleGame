@@ -1,6 +1,7 @@
 body {
     background: beige;
     font-size: xx-large;
+    touch-action: manipulation;
 }
 
 .screen-container {
@@ -33,8 +34,8 @@ body {
 
 .manualClickBtn {
     position:absolute;
-    left: 50%;
-    top: 25%;
+    left: 50% - 200px;
+    top: 25% - 150px;
     height: 100px;
     width: 175px;
     font-size: large;
