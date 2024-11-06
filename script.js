@@ -39,7 +39,12 @@ function initaliseGame() {
 function updateMPC() {
     let textMPC = clickButton.innerHTML;
     let addNum = Number.parseInt(this.innerHTML.match(/(\d+)/)[0]);
-    currMPC += addNum;
+        let flag = affordMultiplier(num);
+    if (!flag) {
+        return;
+    } else {
+        currMPC += addNum;
+    }
 }
 
 //add money function for the clicker button
@@ -47,7 +52,7 @@ function addMoney() {
     let i = this.innerHTML;
     let n = i.match(/(\d+)/);
     let num = Number.parseInt(n[0]);
-    money+=num;
+    money += num;
 };
 
 //check whether player can afford the multiplier
