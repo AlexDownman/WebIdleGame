@@ -45,7 +45,7 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .clickBtn {
