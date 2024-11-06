@@ -31,7 +31,7 @@ body {
     border-radius: 5px;
 }
 
-.manualClickBtn {
+.manualBtn {
     position:absolute;
     left: 50%;
     top: 25%;
