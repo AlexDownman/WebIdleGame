@@ -35,6 +35,7 @@ function initaliseGame() {
     }, 100)
 };
 
+//update Money Per Click
 function updateMPC() {
     let textMPC = clickButton.innerHTML;
     let addNum = Number.parseInt(this.innerHTML.match(/(\d+)/)[0]);
