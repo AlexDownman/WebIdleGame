@@ -39,7 +39,7 @@ function initaliseGame() {
 function updateMPC() {
     let textMPC = clickButton.innerHTML;
     let addNum = Number.parseInt(this.innerHTML.match(/(\d+)/)[0]);
-    let flag = affordMultiplier(num);
+    let flag = affordMultiplier(addNum);
     if (!flag) {
         return;
     } else {
