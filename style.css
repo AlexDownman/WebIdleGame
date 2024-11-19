@@ -34,7 +34,7 @@ body {
 
 .manualClickBtn {
     position:absolute;
-    left: 50%;
+    left: (50%) - 175px;
     top: 25%;
     height: 100px;
     width: 175px;
