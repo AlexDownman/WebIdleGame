@@ -34,7 +34,7 @@ body {
 
 .manualClickBtn {
     position:absolute;
-    left: (50%) - 175px;
+    left: 42%;
     top: 25%;
     height: 100px;
     width: 175px;
@@ -70,7 +70,7 @@ body {
     float: inline-end;
 }
 
-.manualBtn {
+.manualBtnUpgrades {
     height: 100px;
     width: 175px;
     font-size: large;

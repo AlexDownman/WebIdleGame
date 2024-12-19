@@ -21,7 +21,7 @@ function initaliseGame() {
 
     moneyPerSecond.innerHTML = `${mps}/s`;
     currMoney.innerHTML = `${money}`;
-    clickButton.innerHTML = `+$ ${currMPC}`;
+    clickButton.innerHTML = `+$${currMPC}`;
     running = true;
 
     window.setInterval(function(){
@@ -86,4 +86,8 @@ function updateMPS(){
         mps += num;
         moneyPerSecond.innerHTML = `${mps}/s`;
     };
+};
+
+function roundNun(num) {
+    return Number.parseFloat(num).toExponential(4);
 };
